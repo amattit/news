@@ -1,0 +1,7 @@
+private var buttonView: some View {
+    Button(action: self.tap) {
+        Text(generator.answer.rawValue.localized())
+            .multilineTextAlignment(.center)
+            .lineLimit(2)
+    }.animation(.easeInOut)
+}
